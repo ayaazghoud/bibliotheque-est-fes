@@ -1,0 +1,6 @@
+{
+  "name": "Bibliothèque EST Fès - USMBA",
+  "description": "Système de gestion de bibliothèque universitaire pour l'École Supérieure de Technologie de Fès (USMBA) - Espaces Étudiant et Gérant.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

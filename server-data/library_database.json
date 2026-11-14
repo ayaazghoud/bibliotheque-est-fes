@@ -1,0 +1,941 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "code": "GL",
+      "name": "Génie Logiciel",
+      "description": "Génie logiciel, architectures, modélisation UML, design patterns et cycle de vie."
+    },
+    {
+      "id": 2,
+      "code": "RT",
+      "name": "Réseaux et Télécommunications",
+      "description": "Protocoles, sécurité des réseaux, télécommunications et administration systèmes."
+    },
+    {
+      "id": 3,
+      "code": "BD",
+      "name": "Bases de Données",
+      "description": "Modélisation relationnelle, SQL avancé, optimisation de requêtes et SGBD."
+    },
+    {
+      "id": 4,
+      "code": "AL",
+      "name": "Algorithmique",
+      "description": "Structures de données, complexité algorithmique et résolution de problèmes."
+    },
+    {
+      "id": 5,
+      "code": "PR",
+      "name": "Programmation",
+      "description": "Langages de programmation (Java, C, Python, JavaScript) et frameworks."
+    },
+    {
+      "id": 6,
+      "code": "GE",
+      "name": "Génie Électrique",
+      "description": "Électrotechnique, électronique de puissance, automatismes et systèmes embarqués."
+    },
+    {
+      "id": 7,
+      "code": "GE_ENT",
+      "name": "Gestion des Entreprises",
+      "description": "Management de projet, comptabilité, gestion financière et entrepreneuriat."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "googleSub": "google-sub-gerant-est",
+      "email": "gerant.est@usmba.ac.ma",
+      "fullName": "M. Rachid Bennani (Responsable Bibliothèque EST)",
+      "role": "ROLE_GERANT",
+      "isActive": true,
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "googleSub": "google-sub-aya-admin",
+      "email": "aya.azghoud.19@gmail.com",
+      "fullName": "Aya Azghoud (Gérante Bibliothèque EST)",
+      "role": "ROLE_GERANT",
+      "isActive": true,
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 3,
+      "googleSub": "google-sub-student-1",
+      "email": "aya.azghoud@usmba.ac.ma",
+      "fullName": "Aya Azghoud",
+      "role": "ROLE_ETUDIANT",
+      "isActive": true,
+      "createdAt": "2026-09-10T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "googleSub": "google-sub-student-2",
+      "email": "mehdi.elamrani@usmba.ac.ma",
+      "fullName": "Mehdi El Amrani",
+      "role": "ROLE_ETUDIANT",
+      "isActive": true,
+      "createdAt": "2026-09-12T11:30:00Z"
+    },
+    {
+      "id": 5,
+      "googleSub": "google-sub-student-3",
+      "email": "salma.idrissi@usmba.ac.ma",
+      "fullName": "Salma Idrissi",
+      "role": "ROLE_ETUDIANT",
+      "isActive": true,
+      "createdAt": "2026-09-15T09:15:00Z"
+    },
+    {
+      "id": 6,
+      "googleSub": "google-sub-student-4",
+      "email": "hamza.benjelloun@usmba.ac.ma",
+      "fullName": "Hamza Benjelloun",
+      "role": "ROLE_ETUDIANT",
+      "isActive": true,
+      "createdAt": "2026-09-18T14:20:00Z"
+    },
+    {
+      "id": 7,
+      "googleSub": "google-card-1794092596406",
+      "email": "othmane.elidrissi@usmba.ac.ma",
+      "fullName": "Othmane El Idrissi",
+      "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=Othmane%20El%20Idrissi",
+      "role": "ROLE_ETUDIANT",
+      "isActive": true,
+      "createdAt": "2026-11-07T23:03:16.406Z"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "userId": 3,
+      "studentIdNumber": "N134098221",
+      "department": "Génie Logiciel",
+      "phone": "+212 6 61 23 45 67",
+      "maxLoans": 3,
+      "createdAt": "2026-09-10T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 4,
+      "studentIdNumber": "N142076112",
+      "department": "Réseaux et Télécoms",
+      "phone": "+212 6 62 34 56 78",
+      "maxLoans": 3,
+      "createdAt": "2026-09-12T11:30:00Z",
+      "isSuspended": true,
+      "suspensionReason": "Retard supérieur au seuil légal (7 jours)",
+      "suspendedUntil": "Régularisation"
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "studentIdNumber": "N139044558",
+      "department": "Génie Informatique",
+      "phone": "+212 6 63 45 67 89",
+      "maxLoans": 3,
+      "createdAt": "2026-09-15T09:15:00Z",
+      "isSuspended": true,
+      "suspensionReason": "Retard supérieur au seuil légal (7 jours)",
+      "suspendedUntil": "Régularisation"
+    },
+    {
+      "id": 4,
+      "userId": 6,
+      "studentIdNumber": "N130099341",
+      "department": "Génie Électrique",
+      "phone": "+212 6 64 56 78 90",
+      "maxLoans": 3,
+      "createdAt": "2026-09-18T14:20:00Z",
+      "isSuspended": true,
+      "suspensionReason": "Retard supérieur au seuil légal (7 jours)",
+      "suspendedUntil": "Régularisation"
+    },
+    {
+      "id": 5,
+      "userId": 7,
+      "studentIdNumber": "N138549210",
+      "department": "Génie Logiciel",
+      "maxLoans": 3,
+      "academicYear": "2026/2027",
+      "establishment": "École Supérieure de Technologie de Fès (USMBA)",
+      "cardReference": "SCAN-N138549210",
+      "createdAt": "2026-11-07T23:03:16.406Z"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Conception et Architecture Logicielle avec UML et Design Patterns",
+      "author": "Prof. Ahmed Bennani",
+      "isbn": "978-2-10-081234-1",
+      "categoryId": 1,
+      "publicationYear": 2024,
+      "publisher": "Dunod Informatique",
+      "summary": "Guide de référence pour la modélisation objet avancée, les patrons de conception GoF, et l’architecture hexagonale appliquée aux applications d’entreprise.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Réseaux Informatiques : Protocoles TCP/IP, Routage et Sécurité",
+      "author": "Dr. Karim Alami",
+      "isbn": "978-2-10-079876-2",
+      "categoryId": 2,
+      "publicationYear": 2023,
+      "publisher": "Eyrolles Réseaux",
+      "summary": "Fondements complets des architectures réseau, routage dynamique OSPF/BGP, segmentation VLAN, et politiques de sécurité périmétrique.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Bases de Données Relationnelles et MySQL Avancé : Modélisation et Optimisation",
+      "author": "Fatima Zahra Mansouri",
+      "isbn": "978-2-10-083451-8",
+      "categoryId": 3,
+      "publicationYear": 2024,
+      "publisher": "Éditions ENI",
+      "summary": "Modélisation relationnelle rigoureuse en 3NF, indexation B-Tree, optimisation des plans d’exécution SQL et gestion des transactions ACID.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Structures de Données et Algorithmes Fondamentaux en Java",
+      "author": "Youssef Tazi",
+      "isbn": "978-2-10-084992-5",
+      "categoryId": 4,
+      "publicationYear": 2023,
+      "publisher": "Pearson Supérieur",
+      "summary": "Arbres binaires, graphes, algorithmes de Dijkstra et A*, files de priorité et analyse de complexité spatio-temporelle Big-O.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Développement Web Full Stack avec Spring Boot 3 et React 19",
+      "author": "Prof. Mohammed Chraibi",
+      "isbn": "978-2-10-082119-0",
+      "categoryId": 5,
+      "publicationYear": 2025,
+      "publisher": "O’Reilly France",
+      "summary": "Conception d’APIs REST sécurisées par Spring Security et OAuth 2.0, Spring Data JPA avec MySQL et interfaces réactives en React moderne.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Électrotechnique, Automates Programmables et Systèmes Embarqués",
+      "author": "Hassan El Fassi",
+      "isbn": "978-2-10-080345-3",
+      "categoryId": 6,
+      "publicationYear": 2023,
+      "publisher": "Dunod Sciences",
+      "summary": "Circuits triphasés, machines électriques synchrones et asynchrones, automates industriels et microcontrôleurs embarqués.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Management de Projets et Stratégie des Entreprises Technologiques",
+      "author": "Dr. Leila Berrada",
+      "isbn": "978-2-10-085771-4",
+      "categoryId": 7,
+      "publicationYear": 2024,
+      "publisher": "Vuibert Gestion",
+      "summary": "Méthodes Agiles Scrum/Kanban, gestion financière prévisionnelle, analyse des risques et gouvernance des projets technologiques.",
+      "createdAt": "2026-09-01T08:00:00Z"
+    }
+  ],
+  "bookCopies": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "barcode": "EST-GL-001-A",
+      "locationShelf": "Salle Informatique - Rayon A1 - Étagère 2",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "bookId": 1,
+      "barcode": "EST-GL-001-B",
+      "locationShelf": "Salle Informatique - Rayon A1 - Étagère 2",
+      "condition": "GOOD",
+      "status": "BORROWED",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 3,
+      "bookId": 1,
+      "barcode": "EST-GL-001-C",
+      "locationShelf": "Salle Informatique - Rayon A1 - Étagère 2",
+      "condition": "GOOD",
+      "status": "RESERVED",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 4,
+      "bookId": 2,
+      "barcode": "EST-RT-002-A",
+      "locationShelf": "Salle Informatique - Rayon B2 - Étagère 1",
+      "condition": "GOOD",
+      "status": "BORROWED",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 5,
+      "bookId": 2,
+      "barcode": "EST-RT-002-B",
+      "locationShelf": "Salle Informatique - Rayon B2 - Étagère 1",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 6,
+      "bookId": 3,
+      "barcode": "EST-BD-003-A",
+      "locationShelf": "Salle Informatique - Rayon C1 - Étagère 3",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 7,
+      "bookId": 3,
+      "barcode": "EST-BD-003-B",
+      "locationShelf": "Salle Informatique - Rayon C1 - Étagère 3",
+      "condition": "BORROWED",
+      "status": "BORROWED",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 8,
+      "bookId": 3,
+      "barcode": "EST-BD-003-C",
+      "locationShelf": "Salle Informatique - Rayon C1 - Étagère 3",
+      "condition": "GOOD",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 9,
+      "bookId": 4,
+      "barcode": "EST-AL-004-A",
+      "locationShelf": "Salle Informatique - Rayon D3 - Étagère 2",
+      "condition": "GOOD",
+      "status": "BORROWED",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 10,
+      "bookId": 4,
+      "barcode": "EST-AL-004-B",
+      "locationShelf": "Salle Informatique - Rayon D3 - Étagère 2",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 11,
+      "bookId": 5,
+      "barcode": "EST-PR-005-A",
+      "locationShelf": "Salle Informatique - Rayon E1 - Étagère 1",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 12,
+      "bookId": 5,
+      "barcode": "EST-PR-005-B",
+      "locationShelf": "Salle Informatique - Rayon E1 - Étagère 1",
+      "condition": "GOOD",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 13,
+      "bookId": 6,
+      "barcode": "EST-GE-006-A",
+      "locationShelf": "Salle Technique - Rayon G1 - Étagère 4",
+      "condition": "GOOD",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 14,
+      "bookId": 6,
+      "barcode": "EST-GE-006-B",
+      "locationShelf": "Salle Technique - Rayon G1 - Étagère 4",
+      "condition": "FAIR",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 15,
+      "bookId": 7,
+      "barcode": "EST-MG-007-A",
+      "locationShelf": "Salle Économie - Rayon M2 - Étagère 1",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 16,
+      "bookId": 7,
+      "barcode": "EST-MG-007-B",
+      "locationShelf": "Salle Économie - Rayon M2 - Étagère 1",
+      "condition": "GOOD",
+      "status": "AVAILABLE",
+      "createdAt": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 17,
+      "bookId": 1,
+      "barcode": "EST-GL-999-A",
+      "locationShelf": "Rayon Test",
+      "condition": "NEW",
+      "status": "AVAILABLE",
+      "createdAt": "2026-11-07T23:26:59.010Z"
+    },
+    {
+      "id": 18,
+      "bookId": 1,
+      "barcode": "EST-GL-999-B",
+      "locationShelf": "Rayon Test",
+      "condition": "GOOD",
+      "status": "AVAILABLE",
+      "createdAt": "2026-11-07T23:26:59.010Z"
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "bookCopyId": 2,
+      "loanDate": "2026-11-01",
+      "expectedReturnDate": "2026-11-15",
+      "actualReturnDate": null,
+      "status": "ACTIVE",
+      "notes": "Projet de fin de semestre - module Architecture logicielle",
+      "createdByUserId": 1,
+      "createdAt": "2026-11-01T10:00:00Z",
+      "overdueDays": 0,
+      "overdueLevel": "NONE",
+      "reminderCount": 0
+    },
+    {
+      "id": 2,
+      "studentId": 2,
+      "bookCopyId": 4,
+      "loanDate": "2026-10-21",
+      "expectedReturnDate": "2026-11-04",
+      "actualReturnDate": null,
+      "status": "OVERDUE",
+      "notes": "Préparation certification Réseaux",
+      "createdByUserId": 1,
+      "createdAt": "2026-10-21T09:30:00Z",
+      "overdueDays": 10,
+      "overdueLevel": "HIGH",
+      "reminderCount": 1,
+      "lastReminderSentAt": "2026-11-05T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "studentId": 3,
+      "bookCopyId": 7,
+      "loanDate": "2026-10-18",
+      "expectedReturnDate": "2026-11-01",
+      "actualReturnDate": null,
+      "status": "OVERDUE",
+      "notes": "TP Bases de données avancées",
+      "createdByUserId": 1,
+      "createdAt": "2026-10-18T14:00:00Z",
+      "overdueDays": 13,
+      "overdueLevel": "HIGH",
+      "reminderCount": 2,
+      "lastReminderSentAt": "2026-11-04T10:15:00Z"
+    },
+    {
+      "id": 4,
+      "studentId": 4,
+      "bookCopyId": 9,
+      "loanDate": "2026-10-12",
+      "expectedReturnDate": "2026-10-26",
+      "actualReturnDate": null,
+      "status": "OVERDUE",
+      "notes": "Révision Algorithmique et complexité",
+      "createdByUserId": 1,
+      "createdAt": "2026-10-12T11:00:00Z",
+      "overdueDays": 19,
+      "overdueLevel": "HIGH",
+      "reminderCount": 3,
+      "lastReminderSentAt": "2026-11-02T08:45:00Z"
+    },
+    {
+      "id": 5,
+      "studentId": 1,
+      "bookCopyId": 11,
+      "loanDate": "2026-10-01",
+      "expectedReturnDate": "2026-10-15",
+      "actualReturnDate": "2026-10-14",
+      "status": "RETURNED",
+      "notes": "Rendu en parfait état",
+      "createdByUserId": 1,
+      "createdAt": "2026-10-01T10:00:00Z",
+      "overdueDays": 0,
+      "overdueLevel": "NONE",
+      "reminderCount": 0
+    }
+  ],
+  "reminders": [
+    {
+      "id": 1,
+      "loanId": 2,
+      "recipientEmail": "mehdi.elamrani@usmba.ac.ma",
+      "overdueDays": 1,
+      "overdueLevel": "LOW",
+      "messageContent": "Rappel amical : l’ouvrage « Réseaux Informatiques » emprunté à la Bibliothèque EST est arrivé à échéance le 04/11/2026. Merci de le restituer dès que possible.",
+      "deliveryStatus": "SENT",
+      "sentAt": "2026-11-05T14:30:00Z",
+      "sentByUserId": 1
+    },
+    {
+      "id": 2,
+      "loanId": 3,
+      "recipientEmail": "salma.idrissi@usmba.ac.ma",
+      "overdueDays": 3,
+      "overdueLevel": "MEDIUM",
+      "messageContent": "Avis de retard : l’ouvrage « Bases de Données Relationnelles » est en retard de 3 jours. Prière de le rapporter au guichet de prêt de l’EST Fès.",
+      "deliveryStatus": "SENT",
+      "sentAt": "2026-11-04T10:15:00Z",
+      "sentByUserId": 1
+    },
+    {
+      "id": 3,
+      "loanId": 4,
+      "recipientEmail": "hamza.benjelloun@usmba.ac.ma",
+      "overdueDays": 7,
+      "overdueLevel": "HIGH",
+      "messageContent": "Mise en demeure de restitution : l’ouvrage « Structures de Données et Algorithmes » accuse un retard important de plus de 7 jours. Votre compte d’emprunt est suspendu jusqu’à régularisation.",
+      "deliveryStatus": "SENT",
+      "sentAt": "2026-11-02T08:45:00Z",
+      "sentByUserId": 1
+    }
+  ],
+  "searchHistories": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "queryText": "Architecture",
+      "categoryId": 1,
+      "resultsCount": 1,
+      "searchedAt": "2026-11-01T09:45:00Z"
+    },
+    {
+      "id": 2,
+      "studentId": 1,
+      "queryText": "Spring Boot",
+      "categoryId": 5,
+      "resultsCount": 1,
+      "searchedAt": "2026-11-02T14:10:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": 16,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "EMAIL_ENVOYE_AUTO",
+      "entityName": "EMAIL",
+      "entityId": 2,
+      "details": {
+        "date": "2026-11-12",
+        "destinataire": "mehdi.elamrani@usmba.ac.ma",
+        "type": "SUSPENSION_COMPTE",
+        "objet": "[Avis de suspension] Compte bibliothèque suspendu - EST Fès",
+        "triggerKey": "suspension-2-2026-11-12",
+        "simule": true
+      },
+      "timestamp": "2026-11-12T00:10:14.851Z"
+    },
+    {
+      "id": 15,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "SUSPENSION_COMPTE_AUTO",
+      "entityName": "STUDENT",
+      "entityId": 2,
+      "details": {
+        "studentCNE": "N142076112",
+        "seuilJours": 7,
+        "nombreEmpruntsCritiques": 1
+      },
+      "timestamp": "2026-11-12T00:10:13.605Z"
+    },
+    {
+      "id": 14,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "EMAIL_ENVOYE_AUTO",
+      "entityName": "EMAIL",
+      "entityId": 4,
+      "details": {
+        "date": "2026-11-10",
+        "destinataire": "hamza.benjelloun@usmba.ac.ma",
+        "type": "RAPPEL_RETARD_PERIODIQUE",
+        "objet": "[Avis de retard : 15 jours] Restitution urgente requise - « Structures de Données et Algorithmes Fondamentaux en Java »",
+        "triggerKey": "remind-overdue-4-day-15",
+        "simule": true
+      },
+      "timestamp": "2026-11-10T09:09:02.292Z"
+    },
+    {
+      "id": 13,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "EMAIL_ENVOYE_AUTO",
+      "entityName": "EMAIL",
+      "entityId": 3,
+      "details": {
+        "date": "2026-11-10",
+        "destinataire": "salma.idrissi@usmba.ac.ma",
+        "type": "RAPPEL_RETARD_PERIODIQUE",
+        "objet": "[Avis de retard : 9 jours] Restitution urgente requise - « Bases de Données Relationnelles et MySQL Avancé : Modélisation et Optimisation »",
+        "triggerKey": "remind-overdue-3-day-9",
+        "simule": true
+      },
+      "timestamp": "2026-11-10T09:09:02.286Z"
+    },
+    {
+      "id": 12,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "EMAIL_ENVOYE_AUTO",
+      "entityName": "EMAIL",
+      "entityId": 2,
+      "details": {
+        "date": "2026-11-10",
+        "destinataire": "mehdi.elamrani@usmba.ac.ma",
+        "type": "RAPPEL_RETARD_PERIODIQUE",
+        "objet": "[Avis de retard : 6 jours] Restitution urgente requise - « Réseaux Informatiques : Protocoles TCP/IP, Routage et Sécurité »",
+        "triggerKey": "remind-overdue-2-day-6",
+        "simule": true
+      },
+      "timestamp": "2026-11-10T09:09:02.279Z"
+    },
+    {
+      "id": 11,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "EMAIL_ENVOYE_AUTO",
+      "entityName": "EMAIL",
+      "entityId": 4,
+      "details": {
+        "date": "2026-11-10",
+        "destinataire": "hamza.benjelloun@usmba.ac.ma",
+        "type": "SUSPENSION_COMPTE",
+        "objet": "[Avis de suspension] Compte bibliothèque suspendu - EST Fès",
+        "triggerKey": "suspension-4-2026-11-10",
+        "simule": true
+      },
+      "timestamp": "2026-11-10T09:09:02.219Z"
+    },
+    {
+      "id": 10,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "SUSPENSION_COMPTE_AUTO",
+      "entityName": "STUDENT",
+      "entityId": 4,
+      "details": {
+        "studentCNE": "N130099341",
+        "seuilJours": 7,
+        "nombreEmpruntsCritiques": 1
+      },
+      "timestamp": "2026-11-10T09:09:02.213Z"
+    },
+    {
+      "id": 9,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "EMAIL_ENVOYE_AUTO",
+      "entityName": "EMAIL",
+      "entityId": 3,
+      "details": {
+        "date": "2026-11-10",
+        "destinataire": "salma.idrissi@usmba.ac.ma",
+        "type": "SUSPENSION_COMPTE",
+        "objet": "[Avis de suspension] Compte bibliothèque suspendu - EST Fès",
+        "triggerKey": "suspension-3-2026-11-10",
+        "simule": true
+      },
+      "timestamp": "2026-11-10T09:09:02.212Z"
+    },
+    {
+      "id": 8,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "SUSPENSION_COMPTE_AUTO",
+      "entityName": "STUDENT",
+      "entityId": 3,
+      "details": {
+        "studentCNE": "N139044558",
+        "seuilJours": 7,
+        "nombreEmpruntsCritiques": 1
+      },
+      "timestamp": "2026-11-10T09:09:02.087Z"
+    },
+    {
+      "id": 7,
+      "actorUserId": null,
+      "actorName": "Automatique",
+      "action": "ANNULATION_NON_RETRAIT_AUTO",
+      "entityName": "LOAN_REQUEST",
+      "entityId": 2,
+      "details": {
+        "student": "Salma Idrissi",
+        "book": "Conception et Architecture Logicielle avec UML et Design Patterns",
+        "pickupDeadline": "2026-11-08"
+      },
+      "timestamp": "2026-11-10T09:09:01.807Z"
+    },
+    {
+      "id": 6,
+      "actorUserId": 1,
+      "actorName": "M. Rachid Bennani (Responsable Bibliothèque EST)",
+      "action": "USER_LOGIN",
+      "entityName": "USER",
+      "entityId": 1,
+      "details": {
+        "email": "gerant.est@usmba.ac.ma",
+        "role": "ROLE_GERANT",
+        "targetSpace": "gerant"
+      },
+      "timestamp": "2026-11-09T21:43:48.263Z"
+    },
+    {
+      "id": 5,
+      "actorUserId": 3,
+      "actorName": "Aya Azghoud",
+      "action": "USER_LOGIN",
+      "entityName": "USER",
+      "entityId": 3,
+      "details": {
+        "email": "aya.azghoud@usmba.ac.ma",
+        "role": "ROLE_ETUDIANT",
+        "targetSpace": "etudiant"
+      },
+      "timestamp": "2026-11-09T21:43:48.256Z"
+    },
+    {
+      "id": 4,
+      "actorUserId": 1,
+      "actorName": "M. Rachid Bennani (Responsable Bibliothèque EST)",
+      "action": "COPIES_BATCH_CREATED",
+      "entityName": "BOOK_COPY",
+      "entityId": 1,
+      "details": {
+        "count": 2,
+        "barcodes": [
+          "EST-GL-999-A",
+          "EST-GL-999-B"
+        ]
+      },
+      "timestamp": "2026-11-07T23:26:59.010Z"
+    },
+    {
+      "id": 3,
+      "actorUserId": 1,
+      "actorName": "M. Rachid Bennani (Responsable Bibliothèque EST)",
+      "action": "STUDENT_REGISTERED_CARD_SCAN",
+      "entityName": "STUDENT",
+      "entityId": 5,
+      "details": {
+        "studentName": "Othmane El Idrissi",
+        "studentIdNumber": "N138549210",
+        "department": "Génie Logiciel",
+        "academicYear": "2026/2027",
+        "establishment": "École Supérieure de Technologie de Fès (USMBA)"
+      },
+      "timestamp": "2026-11-07T23:03:16.406Z"
+    },
+    {
+      "id": 1,
+      "actorUserId": 1,
+      "actorName": "M. Rachid Bennani",
+      "action": "SYSTEM_INITIALIZATION",
+      "entityName": "LIBRARY",
+      "entityId": 1,
+      "details": {
+        "message": "Initialisation du catalogue de la bibliothèque EST Fès"
+      },
+      "timestamp": "2026-09-01T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "actorUserId": 1,
+      "actorName": "M. Rachid Bennani",
+      "action": "CREATE_LOAN",
+      "entityName": "LOAN",
+      "entityId": 1,
+      "details": {
+        "student": "Aya Azghoud",
+        "copyBarcode": "EST-GL-001-B",
+        "expectedReturn": "2026-11-15"
+      },
+      "timestamp": "2026-11-01T10:00:00Z"
+    }
+  ],
+  "settings": {
+    "id": 1,
+    "defaultLoanDurationDays": 14,
+    "maxLoansPerStudent": 3,
+    "overdueLowThreshold": 1,
+    "overdueMediumThreshold": 4,
+    "overdueHighThreshold": 8,
+    "smtpEnabled": true,
+    "smtpFromAddress": "bibliotheque.est@usmba.ac.ma",
+    "smtpFromName": "Bibliothèque EST Fès - USMBA",
+    "smtpHost": "smtp.usmba.ac.ma",
+    "smtpPort": 587,
+    "reservationDurationDays": 2,
+    "maxActiveRequestsPerStudent": 2,
+    "withdrawalDeadlineHours": 48,
+    "reminderDaysBeforeDue": 2,
+    "overdueReminderFrequencyDays": 3,
+    "suspensionThresholdDays": 7
+  },
+  "counters": {
+    "category": 7,
+    "user": 7,
+    "student": 5,
+    "book": 7,
+    "copy": 18,
+    "loan": 5,
+    "reminder": 3,
+    "search": 2,
+    "audit": 16,
+    "loanRequest": 3,
+    "notification": 7
+  },
+  "loanRequests": [
+    {
+      "id": 1,
+      "studentId": 2,
+      "bookId": 5,
+      "requestDate": "2026-11-06T14:30:00Z",
+      "status": "PENDING",
+      "notes": "Besoin pour le projet semestriel en génie logiciel et développement web.",
+      "createdAt": "2026-11-06T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "studentId": 3,
+      "bookId": 1,
+      "allocatedCopyId": 3,
+      "requestDate": "2026-11-05T10:15:00Z",
+      "status": "EXPIRED",
+      "reviewDate": "2026-11-05T11:00:00Z",
+      "reviewedByUserId": 1,
+      "pickupDeadline": "2026-11-08",
+      "notes": "Demande validée. Exemplaire mis de côté au guichet.",
+      "createdAt": "2026-11-05T10:15:00Z",
+      "updatedAt": "2026-11-10T09:09:01.807Z"
+    },
+    {
+      "id": 3,
+      "studentId": 4,
+      "bookId": 3,
+      "requestDate": "2026-11-04T09:00:00Z",
+      "status": "REJECTED",
+      "reviewDate": "2026-11-04T10:30:00Z",
+      "reviewedByUserId": 1,
+      "rejectionReason": "Étudiant ayant un retard bloquant (veuillez restituer l'ouvrage en retard).",
+      "createdAt": "2026-11-04T09:00:00Z",
+      "updatedAt": "2026-11-04T10:30:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 7,
+      "recipientUserId": 4,
+      "type": "GENERAL",
+      "title": "Compte suspendu pour dépassement de retard",
+      "message": "Votre compte bibliothèque a été suspendu automatiquement. Vous avez des emprunts en retard de plus de 7 jours. Veuillez restituer les ouvrages au guichet pour lever la suspension.",
+      "relatedEntityName": "STUDENT",
+      "relatedEntityId": 2,
+      "isRead": false,
+      "createdAt": "2026-11-12T00:10:13.604Z"
+    },
+    {
+      "id": 6,
+      "recipientUserId": 6,
+      "type": "GENERAL",
+      "title": "Compte suspendu pour dépassement de retard",
+      "message": "Votre compte bibliothèque a été suspendu automatiquement. Vous avez des emprunts en retard de plus de 7 jours. Veuillez restituer les ouvrages au guichet pour lever la suspension.",
+      "relatedEntityName": "STUDENT",
+      "relatedEntityId": 4,
+      "isRead": false,
+      "createdAt": "2026-11-10T09:09:02.213Z"
+    },
+    {
+      "id": 5,
+      "recipientUserId": 5,
+      "type": "GENERAL",
+      "title": "Compte suspendu pour dépassement de retard",
+      "message": "Votre compte bibliothèque a été suspendu automatiquement. Vous avez des emprunts en retard de plus de 7 jours. Veuillez restituer les ouvrages au guichet pour lever la suspension.",
+      "relatedEntityName": "STUDENT",
+      "relatedEntityId": 3,
+      "isRead": false,
+      "createdAt": "2026-11-10T09:09:02.086Z"
+    },
+    {
+      "id": 4,
+      "recipientUserId": 5,
+      "type": "RESERVATION_EXPIRED",
+      "title": "Réservation annulée (délai dépassé)",
+      "message": "Le délai de retrait de 48h pour « Conception et Architecture Logicielle avec UML et Design Patterns » est expiré. L'exemplaire physique a été remis en rayon.",
+      "relatedEntityName": "LOAN_REQUEST",
+      "relatedEntityId": 2,
+      "isRead": false,
+      "createdAt": "2026-11-10T09:09:01.807Z"
+    },
+    {
+      "id": 1,
+      "recipientUserId": 1,
+      "recipientRole": "ROLE_GERANT",
+      "type": "NEW_LOAN_REQUEST",
+      "title": "Nouvelle demande d'emprunt en ligne",
+      "message": "L'étudiant Mehdi El Amrani a soumis une demande d'emprunt pour « Développement Web Full Stack avec Spring Boot 3 et React 19 ».",
+      "relatedEntityName": "LOAN_REQUEST",
+      "relatedEntityId": 1,
+      "isRead": false,
+      "createdAt": "2026-11-06T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "recipientUserId": 5,
+      "type": "REQUEST_APPROVED",
+      "title": "Demande d'emprunt acceptée",
+      "message": "Votre demande pour « Conception et Architecture Logicielle avec UML et Design Patterns » a été acceptée. Votre exemplaire EST-GL-001-C est réservé jusqu'au 08/11/2026 au guichet de prêt de la bibliothèque.",
+      "relatedEntityName": "LOAN_REQUEST",
+      "relatedEntityId": 2,
+      "isRead": false,
+      "createdAt": "2026-11-05T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "recipientUserId": 6,
+      "type": "REQUEST_REJECTED",
+      "title": "Demande d'emprunt refusée",
+      "message": "Votre demande pour « Bases de Données Relationnelles et MySQL Avancé » a été refusée. Motif : Étudiant ayant un retard bloquant.",
+      "relatedEntityName": "LOAN_REQUEST",
+      "relatedEntityId": 3,
+      "isRead": true,
+      "createdAt": "2026-11-04T10:30:00Z"
+    }
+  ]
+}
